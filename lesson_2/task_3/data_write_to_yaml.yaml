@@ -1,0 +1,10 @@
+currency:
+- US dollar
+- euro
+- рубль
+- pound sterling
+number_of_currency_notes:
+  10 £: 600
+  100 $: 150
+  50 €: 250
+total_number_of_bills: 1000
