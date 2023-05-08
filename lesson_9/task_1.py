@@ -18,7 +18,7 @@ def host_ping(hosts=list()):
             pass
         p = subprocess.Popen(f'ping {host} -c 2', shell=True, stdout=subprocess.PIPE)
         p.wait()
-        result.append(f'Узел {host} {" не доступен" if p.returncode else " доступен"}')
+        result.append(f'Узел {host}{" не доступен" if p.returncode else " доступен"}')
     return result
 
 
