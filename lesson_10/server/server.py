@@ -4,22 +4,19 @@ import sys
 import select
 from socket import *
 from log.server_log_config import server_log, log
-from server_resource import ANSWER, ACTION, ServerVerifier
+from server_resource import ANSWER, ACTION, ServerVerifier, ServerPort
 
 logger = server_log
 
 
 class WorkingServer(metaclass=ServerVerifier):
+    port = ServerPort()
+
     def __init__(self):
         try:
             port = int(sys.argv[sys.argv.index('-p') + 1]) if '-p' in sys.argv else 7777
-            if port < 1024 or port > 65536:
-                raise ValueError
         except IndexError:
             logger.critical('После параметра -\'p\' необходимо указать номер порта.')
-            sys.exit(1)
-        except ValueError:
-            logger.critical('В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
             sys.exit(1)
         else:
             self.port = port

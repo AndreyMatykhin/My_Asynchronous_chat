@@ -1,5 +1,7 @@
 import dis
 
+from log.server_log_config import server_log
+
 ANSWER = {
     # 1xx — информационные сообщения:
     100: 'базовое уведомление',
@@ -40,16 +42,26 @@ class ServerVerifier(type):
                 pass
             else:
                 for i in ret:
-                    print(i)
                     if i.opname == 'LOAD_GLOBAL':
                         if i.argval not in methods:
                             methods.append(i.argval)
                     elif i.opname == 'LOAD_ATTR':
                         if i.argval not in attrs:
                             attrs.append(i.argval)
-        print(methods,attrs)
         if 'connect' in methods:
             raise TypeError('Использование метода connect недопустимо в серверном классе')
         if not ('SOCK_STREAM' in methods and 'AF_INET' in methods):
             raise TypeError('Некорректная инициализация сокета.')
         super().__init__(clsname, bases, clsdict)
+
+logger = server_log
+class ServerPort:
+    def __set__(self, instance, value):
+        if not 1023 < value < 65536:
+            logger.critical(
+                f'Попытка запуска сервера с указанием неподходящего порта {value}. В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
+            exit(1)
+        instance.__dict__[self.name] = value
+
+    def __set_name__(self, owner, name):
+        self.name = name
