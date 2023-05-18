@@ -4,44 +4,83 @@ import sys
 import select
 from socket import *
 from log.server_log_config import server_log, log
-from server_resource import ANSWER, ACTION
+from server_resource import ANSWER, ACTION, ServerVerifier
 
 logger = server_log
 
 
-@log()
-def create_connect():
-    """
-        Command line options:
-            -p <port> — TCP port for operation (uses 7777 by default);
+class WorkingServer(metaclass=ServerVerifier):
+    def __init__(self):
+        try:
+            port = int(sys.argv[sys.argv.index('-p') + 1]) if '-p' in sys.argv else 7777
+            if port < 1024 or port > 65536:
+                raise ValueError
+        except IndexError:
+            logger.critical('После параметра -\'p\' необходимо указать номер порта.')
+            sys.exit(1)
+        except ValueError:
+            logger.critical('В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
+            sys.exit(1)
+        else:
+            self.port = port
+        try:
+            addr = sys.argv[sys.argv.index('-a') + 1] if '-a' in sys.argv else 'localhost'
+        except IndexError:
+            logger.critical('После параметра -\'a\' необходимо указать адрес в формате ххх.ххх.ххх.ххх')
+            sys.exit(1)
+        else:
+            self.addr = addr
+        create_socket = socket(AF_INET, SOCK_STREAM)
+        try:
+            create_socket.bind((self.addr, self.port))
+        except OSError:
+            logger.critical("Проверьте правильность указанных адреса и порта")
+            sys.exit(1)
+        create_socket.settimeout(0.2)
+        self.socket = create_socket
+        self.socket.listen()
+        logger.debug('Socket сервера успешно создан')
+        self.users = {}
+        self.list_clients = []
+        self.answer_list = []
 
-            -a <addr> — the IP address to listen to (by default listens to all available addresses).
-            """
-    try:
-        port = int(sys.argv[sys.argv.index('-p') + 1]) if '-p' in sys.argv else 7777
-        if port < 1024 or port > 65536:
-            raise ValueError
-    except IndexError:
-        logger.critical('После параметра -\'p\' необходимо указать номер порта.')
-        sys.exit(1)
-    except ValueError:
-        logger.critical('В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
-        sys.exit(1)
-    try:
-        addr = sys.argv[sys.argv.index('-a') + 1] if '-a' in sys.argv else 'localhost'
-    except IndexError:
-        logger.critical('После параметра -\'a\' необходимо указать адрес в формате ххх.ххх.ххх.ххх')
-        sys.exit(1)
-    create_socket = socket(AF_INET, SOCK_STREAM)
-    try:
-        create_socket.bind((addr, port))
-    except OSError:
-        logger.critical("Проверьте правильность указанных адреса и порта")
-        sys.exit(1)
-    create_socket.listen(5)
-    create_socket.settimeout(0.2)
-    logger.debug('Socket сервера успешно создан')
-    return create_socket
+    def loop(self):
+        while True:
+            try:
+                new_client, addr = self.socket.accept()
+            except OSError as e:
+                pass
+            else:
+                fg_message = get_message(new_client)
+                if 'action' in fg_message and fg_message['action'] == 'presence' and 'time' in fg_message and \
+                        'user' in fg_message and 'account_name' in fg_message['user'] and 'status' in fg_message[
+                    'user']:
+                    logger.debug(f'Получен запрос на соединение от клиента {fg_message["user"]["account_name"]}')
+                    if fg_message['user']['status'] == "Yep, I am here!" and not (
+                            fg_message['user']['account_name'] in self.users):
+                        self.users[fg_message['user']['account_name']] = new_client
+                        self.list_clients.append(new_client)
+                        logger.debug(f'Присоединился клиент {fg_message["user"]["account_name"]}')
+                        send_server_message(new_client, 200)
+                    else:
+                        logger.debug(f'Клиент {fg_message["user"]["account_name"]} уже подключен')
+                        send_message(new_client, 409)
+                else:
+                    logger.debug(f'Получено неверное сообщение')
+                    send_server_message(new_client, 400)
+            w_list = []
+            r_list = []
+            try:
+                if self.list_clients:
+                    r_list, w_list, e_list = select.select(self.list_clients, self.list_clients, [], 2)
+            except Exception as e:
+                pass
+            if r_list:
+                reaquest_list = read_reaquest(r_list, self.list_clients)
+                if reaquest_list:
+                    self.answer_list = create_answer(reaquest_list, self.list_clients, self.users)
+            if self.answer_list:
+                send_message(self.users, self.answer_list, w_list)
 
 
 @log()
@@ -106,45 +145,8 @@ def read_reaquest(r_list, clients):
 
 
 def main():
-    my_socket = create_connect()
-    users = {}
-    list_clients = []
-    answer_list = []
-    while True:
-        try:
-            new_client, addr = my_socket.accept()
-        except OSError as e:
-            pass
-        else:
-            fg_message = get_message(new_client)
-            if 'action' in fg_message and fg_message['action'] == 'presence' and 'time' in fg_message and \
-                    'user' in fg_message and 'account_name' in fg_message['user'] and 'status' in fg_message['user']:
-                logger.debug(f'Получен запрос на соединение от клиента {fg_message["user"]["account_name"]}')
-                if fg_message['user']['status'] == "Yep, I am here!" and not (
-                        fg_message['user']['account_name'] in users):
-                    users[fg_message['user']['account_name']] = new_client
-                    list_clients.append(new_client)
-                    logger.debug(f'Присоединился клиент {fg_message["user"]["account_name"]}')
-                    send_server_message(new_client, 200)
-                else:
-                    logger.debug(f'Клиент {fg_message["user"]["account_name"]} уже подключен')
-                    send_message(new_client, 409)
-            else:
-                logger.debug(f'Получено неверное сообщение')
-                send_server_message(new_client, 400)
-        w_list = []
-        r_list = []
-        try:
-            if list_clients:
-                r_list, w_list, e_list = select.select(list_clients, list_clients, [], 2)
-        except Exception as e:
-            pass
-        if r_list:
-            reaquest_list = read_reaquest(r_list, list_clients)
-            if reaquest_list:
-                answer_list = create_answer(reaquest_list, list_clients, users)
-        if answer_list:
-            send_message(users, answer_list, w_list)
+    server = WorkingServer()
+    server.loop()
 
 
 if __name__ == "__main__":
