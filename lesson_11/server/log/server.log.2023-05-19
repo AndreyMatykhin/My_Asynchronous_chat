@@ -1,0 +1,108 @@
+2023-05-18 22:52:05,191 DEBUG server Socket сервера успешно создан
+2023-05-18 22:52:05,202 DEBUG server_log_config Вызвана функция create_connect() с аргументами ((), {}) из функции main()
+2023-05-18 22:52:17,291 DEBUG server Сообщение: "presence" было отправлено клиентом: ('127.0.0.1', 50198)
+2023-05-18 22:52:17,292 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50198)>,), {}) из функции main()
+2023-05-18 22:52:17,292 DEBUG server Получен запрос на соединение от клиента Guest-244
+2023-05-18 22:52:17,293 DEBUG server Присоединился клиент Guest-244
+2023-05-18 22:52:17,293 DEBUG server Сформированно сообщение OK
+2023-05-18 22:52:17,294 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 50198)
+2023-05-18 22:52:17,295 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50198)>, 200), {}) из функции main()
+2023-05-18 22:52:17,496 DEBUG server Клиент (5, ('127.0.0.1', 50198)) отключился от сервера
+2023-05-18 22:52:17,497 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами (([<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50198)>], []), {}) из функции main()
+2023-05-18 22:53:26,636 DEBUG server Сообщение: "presence" было отправлено клиентом: ('127.0.0.1', 34074)
+2023-05-18 22:53:26,637 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34074)>,), {}) из функции main()
+2023-05-18 22:53:26,637 DEBUG server Получен запрос на соединение от клиента Guest-83
+2023-05-18 22:53:26,637 DEBUG server Присоединился клиент Guest-83
+2023-05-18 22:53:26,637 DEBUG server Сформированно сообщение OK
+2023-05-18 22:53:26,638 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 34074)
+2023-05-18 22:53:26,638 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34074)>, 200), {}) из функции main()
+2023-05-18 22:53:26,839 DEBUG server Клиент (6, ('127.0.0.1', 34074)) отключился от сервера
+2023-05-18 22:53:26,840 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами (([<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34074)>], []), {}) из функции main()
+2023-05-18 22:54:22,381 DEBUG server Сообщение: "presence" было отправлено клиентом: ('127.0.0.1', 44564)
+2023-05-18 22:54:22,382 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 44564)>,), {}) из функции main()
+2023-05-18 22:54:22,382 DEBUG server Получен запрос на соединение от клиента Guest-889
+2023-05-18 22:54:22,382 DEBUG server Присоединился клиент Guest-889
+2023-05-18 22:54:22,382 DEBUG server Сформированно сообщение OK
+2023-05-18 22:54:22,383 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 44564)
+2023-05-18 22:54:22,383 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 44564)>, 200), {}) из функции main()
+2023-05-18 22:54:29,603 DEBUG server Сообщение: "quit" было отправлено клиентом: ('127.0.0.1', 44564)
+2023-05-18 22:54:29,604 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 44564)>,), {}) из функции read_reaquest()
+2023-05-18 22:54:29,605 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами (([<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 44564)>], [<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 44564)>]), {}) из функции main()
+2023-05-18 22:54:29,606 DEBUG server Сформированно сообщение OK
+2023-05-18 22:54:29,608 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 44564)
+2023-05-18 22:54:29,610 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 44564)>, 200), {}) из функции create_answer()
+2023-05-18 22:54:29,612 DEBUG server_log_config Вызвана функция create_answer() с аргументами (({}, [], {'Guest-244': <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50198)>, 'Guest-83': <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34074)>}), {}) из функции main()
+2023-05-18 23:34:29,714 DEBUG server Сообщение: "presence" было отправлено клиентом: ('127.0.0.1', 58020)
+2023-05-18 23:34:29,779 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58020)>,), {}) из функции main()
+2023-05-18 23:34:29,780 DEBUG server Получен запрос на соединение от клиента Guest-86
+2023-05-18 23:34:29,781 DEBUG server Присоединился клиент Guest-86
+2023-05-18 23:34:29,784 DEBUG server Сформированно сообщение OK
+2023-05-18 23:34:29,784 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 58020)
+2023-05-18 23:34:29,785 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58020)>, 200), {}) из функции main()
+2023-05-18 23:34:37,009 DEBUG server Клиент (7, ('127.0.0.1', 58020)) отключился от сервера
+2023-05-18 23:34:37,012 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами (([<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58020)>], []), {}) из функции main()
+2023-05-18 23:36:17,163 DEBUG server Сообщение: "presence" было отправлено клиентом: ('127.0.0.1', 53732)
+2023-05-18 23:36:17,164 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53732)>,), {}) из функции main()
+2023-05-18 23:36:17,164 DEBUG server Получен запрос на соединение от клиента Guest-457
+2023-05-18 23:36:17,164 DEBUG server Присоединился клиент Guest-457
+2023-05-18 23:36:17,164 DEBUG server Сформированно сообщение OK
+2023-05-18 23:36:17,165 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 53732)
+2023-05-18 23:36:17,165 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53732)>, 200), {}) из функции main()
+2023-05-18 23:36:22,577 DEBUG server Клиент (8, ('127.0.0.1', 53732)) отключился от сервера
+2023-05-18 23:36:22,578 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами (([<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53732)>], []), {}) из функции main()
+2023-05-18 23:36:26,895 DEBUG server Сообщение: "presence" было отправлено клиентом: ('127.0.0.1', 38730)
+2023-05-18 23:36:26,896 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>,), {}) из функции main()
+2023-05-18 23:36:26,896 DEBUG server Получен запрос на соединение от клиента Guest-367
+2023-05-18 23:36:26,897 DEBUG server Присоединился клиент Guest-367
+2023-05-18 23:36:26,897 DEBUG server Сформированно сообщение OK
+2023-05-18 23:36:26,897 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 38730)
+2023-05-18 23:36:26,898 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>, 200), {}) из функции main()
+2023-05-18 23:36:55,974 DEBUG server Сообщение: "msg" было отправлено клиентом: ('127.0.0.1', 38730)
+2023-05-18 23:36:55,975 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>,), {}) из функции read_reaquest()
+2023-05-18 23:36:55,977 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами (([<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>], [<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>]), {}) из функции main()
+2023-05-18 23:36:55,978 DEBUG server Сформированно сообщение OK
+2023-05-18 23:36:55,978 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 38730)
+2023-05-18 23:36:55,980 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>, 200), {}) из функции create_answer()
+2023-05-18 23:36:55,981 DEBUG server_log_config Вызвана функция create_answer() с аргументами (({}, [<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>], {'Guest-244': <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50198)>, 'Guest-83': <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34074)>, 'Guest-86': <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58020)>, 'Guest-457': <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53732)>, 'Guest-367': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>}), {}) из функции main()
+2023-05-18 23:36:55,986 DEBUG server_log_config Вызвана функция send_message() с аргументами (({'Guest-244': <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50198)>, 'Guest-83': <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34074)>, 'Guest-86': <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58020)>, 'Guest-457': <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53732)>, 'Guest-367': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>}, [], [<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>]), {}) из функции main()
+2023-05-18 23:37:12,033 DEBUG server Сообщение: "quit" было отправлено клиентом: ('127.0.0.1', 38730)
+2023-05-18 23:37:12,035 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>,), {}) из функции read_reaquest()
+2023-05-18 23:37:12,035 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами (([<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>], [<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>]), {}) из функции main()
+2023-05-18 23:37:12,036 DEBUG server Сформированно сообщение OK
+2023-05-18 23:37:12,036 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 38730)
+2023-05-18 23:37:12,038 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 38730)>, 200), {}) из функции create_answer()
+2023-05-18 23:37:12,040 DEBUG server_log_config Вызвана функция create_answer() с аргументами (({}, [], {'Guest-244': <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50198)>, 'Guest-83': <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34074)>, 'Guest-86': <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58020)>, 'Guest-457': <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53732)>}), {}) из функции main()
+2023-05-19 01:06:05,697 DEBUG server Socket сервера успешно создан
+2023-05-19 01:14:24,520 DEBUG server Socket сервера успешно создан
+2023-05-19 01:16:02,532 DEBUG server Socket сервера успешно создан
+2023-05-19 01:17:08,668 DEBUG server Socket сервера успешно создан
+2023-05-19 01:19:14,384 DEBUG server Socket сервера успешно создан
+2023-05-19 01:28:38,161 DEBUG server Socket сервера успешно создан
+2023-05-19 01:28:46,005 DEBUG server Сообщение: "presence" было отправлено клиентом: ('127.0.0.1', 51616)
+2023-05-19 01:28:46,022 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>,), {}) из функции loop()
+2023-05-19 01:28:46,023 DEBUG server Получен запрос на соединение от клиента Guest-53
+2023-05-19 01:28:46,023 DEBUG server Присоединился клиент Guest-53
+2023-05-19 01:28:46,023 DEBUG server Сформированно сообщение OK
+2023-05-19 01:28:46,024 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 51616)
+2023-05-19 01:28:46,024 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>, 200), {}) из функции loop()
+2023-05-19 01:29:14,696 DEBUG server Сообщение: "msg" было отправлено клиентом: ('127.0.0.1', 51616)
+2023-05-19 01:29:14,697 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>,), {}) из функции read_reaquest()
+2023-05-19 01:29:14,699 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами (([<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>], [<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>]), {}) из функции loop()
+2023-05-19 01:29:14,699 DEBUG server Сформированно сообщение OK
+2023-05-19 01:29:14,699 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 51616)
+2023-05-19 01:29:14,701 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>, 200), {}) из функции create_answer()
+2023-05-19 01:29:14,702 DEBUG server_log_config Вызвана функция create_answer() с аргументами (({}, [<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>], {'Guest-53': <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>}), {}) из функции loop()
+2023-05-19 01:29:14,706 DEBUG server_log_config Вызвана функция send_message() с аргументами (({'Guest-53': <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>}, [], [<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>]), {}) из функции loop()
+2023-05-19 01:29:23,927 DEBUG server Сообщение: "quit" было отправлено клиентом: ('127.0.0.1', 51616)
+2023-05-19 01:29:23,929 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>,), {}) из функции read_reaquest()
+2023-05-19 01:29:23,931 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами (([<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>], [<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>]), {}) из функции loop()
+2023-05-19 01:29:23,931 DEBUG server Сформированно сообщение OK
+2023-05-19 01:29:23,932 DEBUG server Сообщение OK отправлено клиенту ('127.0.0.1', 51616)
+2023-05-19 01:29:23,933 DEBUG server_log_config Вызвана функция send_server_message() с аргументами ((<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51616)>, 200), {}) из функции create_answer()
+2023-05-19 01:29:23,935 DEBUG server_log_config Вызвана функция create_answer() с аргументами (({}, [], {}), {}) из функции loop()
+2023-05-19 01:40:35,797 DEBUG server Socket сервера успешно создан
+2023-05-19 01:41:01,333 CRITICAL server В качастве порта может быть указано только число в диапазоне от 1024 до 65535.
+2023-05-19 01:41:23,512 CRITICAL server_resource Попытка запуска сервера с указанием неподходящего порта 150. В качастве порта может быть указано только число в диапазоне от 1024 до 65535.
+2023-05-19 01:42:01,508 CRITICAL server_resource Попытка запуска сервера с указанием неподходящего порта 150. В качастве порта может быть указано только число в диапазоне от 1024 до 65535.
+2023-05-19 01:42:27,350 CRITICAL server_resource Попытка запуска сервера с указанием неподходящего порта 150. В качастве порта может быть указано только число в диапазоне от 1024 до 65535.
+2023-05-19 01:42:30,919 DEBUG server Socket сервера успешно создан
