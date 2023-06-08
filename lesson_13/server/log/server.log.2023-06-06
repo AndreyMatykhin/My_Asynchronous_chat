@@ -1,0 +1,80 @@
+2023-06-06 15:07:38,864 INFO server Socket сервера успешно создан
+2023-06-06 15:08:12,493 INFO server Socket сервера успешно создан
+2023-06-06 15:09:04,433 INFO server Socket сервера успешно создан
+2023-06-06 15:09:45,981 INFO server Socket сервера успешно создан
+2023-06-06 15:10:51,314 INFO server Socket сервера успешно создан
+2023-06-06 15:15:39,596 INFO server Socket сервера успешно создан
+2023-06-06 15:16:43,019 INFO server Socket сервера успешно создан
+2023-06-06 15:18:07,583 INFO server Socket сервера успешно создан
+2023-06-06 15:19:30,770 INFO server Socket сервера успешно создан
+2023-06-06 15:20:05,678 INFO server Socket сервера успешно создан
+2023-06-06 15:20:16,731 INFO server Socket сервера успешно создан
+2023-06-06 15:20:44,158 INFO server Socket сервера успешно создан
+2023-06-06 15:21:38,312 INFO server Socket сервера успешно создан
+2023-06-06 15:25:14,150 INFO server Socket сервера успешно создан
+2023-06-06 15:25:24,026 INFO server Socket сервера успешно создан
+2023-06-06 15:25:38,747 INFO server Socket сервера успешно создан
+2023-06-06 15:26:12,867 INFO server Socket сервера успешно создан
+2023-06-06 15:35:43,963 INFO server Socket сервера успешно создан
+2023-06-06 16:52:45,458 INFO server Socket сервера успешно создан
+2023-06-06 16:53:47,381 INFO server Socket сервера успешно создан
+2023-06-06 17:01:08,862 INFO server Socket сервера успешно создан
+2023-06-06 17:01:59,266 INFO server Socket сервера успешно создан
+2023-06-06 17:30:02,922 INFO server Socket сервера успешно создан
+2023-06-06 17:31:26,854 INFO server Socket сервера успешно создан
+2023-06-06 17:31:47,372 INFO server Установлено соедение с ПК ('127.0.0.1', 51530)
+2023-06-06 17:31:47,373 INFO server_resource Сообщение: "presence" было отправлено клиентом: ('127.0.0.1', 51530)
+2023-06-06 17:31:47,442 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=27, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51530)>,), {}) из функции read_reaquest()
+2023-06-06 17:31:47,443 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:31:47,443 INFO server Получен запрос на соединение от клиента user3
+2023-06-06 17:31:47,489 INFO server Присоединился клиент user3
+2023-06-06 17:31:47,490 INFO server_resource Сформированно сообщение "{'response': 200, 'alert': 'OK'}"
+2023-06-06 17:31:47,490 DEBUG server_log_config Вызвана функция create_server_message() с аргументами ((200,), {}) из функции create_answer()
+2023-06-06 17:31:47,491 DEBUG server_log_config Вызвана функция create_answer() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:31:47,491 INFO server_resource Сообщение отправлено клиенту ('127.0.0.1', 51530)
+2023-06-06 17:31:47,492 DEBUG server_log_config Вызвана функция send_message() с аргументами ((<socket.socket fd=27, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51530)>, {'response': 200, 'alert': 'OK'}), {}) из функции send_answer()
+2023-06-06 17:31:47,492 INFO server Отправлено сообщение  {'response': 200, 'alert': 'OK'} пользователю <socket.socket fd=27, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51530)>
+2023-06-06 17:31:47,493 DEBUG server_log_config Вызвана функция send_answer() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:31:47,693 INFO server_resource Сообщение: "all_users" было отправлено клиентом: ('127.0.0.1', 51530)
+2023-06-06 17:31:47,694 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=27, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51530)>,), {}) из функции read_reaquest()
+2023-06-06 17:31:47,695 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:31:47,696 INFO server_resource Сформированно сообщение "{'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3']}"
+2023-06-06 17:31:47,697 DEBUG server_log_config Вызвана функция create_server_message() с аргументами ((202, ['user1', 'user2', 'Guest-395', 'user3']), {}) из функции create_answer()
+2023-06-06 17:31:47,697 INFO server Клиенту user3 отправлен список всех пользователей
+2023-06-06 17:31:47,697 DEBUG server_log_config Вызвана функция create_answer() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:31:47,698 INFO server_resource Сообщение отправлено клиенту ('127.0.0.1', 51530)
+2023-06-06 17:31:47,698 DEBUG server_log_config Вызвана функция send_message() с аргументами ((<socket.socket fd=27, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51530)>, {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3']}), {}) из функции send_answer()
+2023-06-06 17:31:47,699 INFO server Отправлено сообщение  {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3']} пользователю <socket.socket fd=27, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51530)>
+2023-06-06 17:31:47,699 DEBUG server_log_config Вызвана функция send_answer() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:31:47,900 INFO server_resource Сообщение: "get_contacts" было отправлено клиентом: ('127.0.0.1', 51530)
+2023-06-06 17:31:47,902 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=27, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51530)>,), {}) из функции read_reaquest()
+2023-06-06 17:31:47,903 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:31:47,919 INFO server_resource Сформированно сообщение "{'response': 202, 'alert': '(accepted) — подтверждение'}"
+2023-06-06 17:31:47,920 DEBUG server_log_config Вызвана функция create_server_message() с аргументами ((202, []), {}) из функции create_answer()
+2023-06-06 17:31:47,921 INFO server Клиенту user3 отправлен список контактов
+2023-06-06 17:31:47,922 DEBUG server_log_config Вызвана функция create_answer() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:31:47,922 INFO server_resource Сообщение отправлено клиенту ('127.0.0.1', 51530)
+2023-06-06 17:31:47,923 DEBUG server_log_config Вызвана функция send_message() с аргументами ((<socket.socket fd=27, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51530)>, {'response': 202, 'alert': '(accepted) — подтверждение'}), {}) из функции send_answer()
+2023-06-06 17:31:47,924 INFO server Отправлено сообщение  {'response': 202, 'alert': '(accepted) — подтверждение'} пользователю <socket.socket fd=27, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51530)>
+2023-06-06 17:31:47,925 DEBUG server_log_config Вызвана функция send_answer() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:31:56,143 INFO server_resource Сообщение: "quit" было отправлено клиентом: ('127.0.0.1', 51530)
+2023-06-06 17:31:56,145 DEBUG server_log_config Вызвана функция get_message() с аргументами ((<socket.socket fd=27, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51530)>,), {}) из функции read_reaquest()
+2023-06-06 17:31:56,146 DEBUG server_log_config Вызвана функция read_reaquest() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:31:56,146 INFO server Клиент user3 инициировал отключение
+2023-06-06 17:31:56,147 DEBUG server_log_config Вызвана функция create_answer() с аргументами ((<WorkingServer(Thread-1, started daemon 140542505588288)>,), {}) из функции run()
+2023-06-06 17:34:52,848 INFO server Socket сервера успешно создан
+2023-06-06 17:36:19,602 INFO server Socket сервера успешно создан
+2023-06-06 17:37:38,242 INFO server Socket сервера успешно создан
+2023-06-06 17:43:57,911 INFO server Socket сервера успешно создан
+2023-06-06 17:44:56,014 INFO server Socket сервера успешно создан
+2023-06-06 17:46:42,559 INFO server Socket сервера успешно создан
+2023-06-06 17:48:47,106 INFO server Socket сервера успешно создан
+2023-06-06 17:49:11,579 INFO server Socket сервера успешно создан
+2023-06-06 17:49:51,220 INFO server Socket сервера успешно создан
+2023-06-06 17:52:01,056 INFO server Socket сервера успешно создан
+2023-06-06 17:52:41,216 INFO server Socket сервера успешно создан
+2023-06-06 17:53:27,418 INFO server Socket сервера успешно создан
+2023-06-06 17:54:51,586 INFO server Socket сервера успешно создан
+2023-06-06 17:55:57,232 INFO server Socket сервера успешно создан
+2023-06-06 18:06:34,702 INFO server Socket сервера успешно создан
+2023-06-06 18:08:52,579 INFO server Socket сервера успешно создан
