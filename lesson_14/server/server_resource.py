@@ -1,5 +1,6 @@
 import dis
 import json
+import socket
 
 from log.server_log_config import server_log, log
 
@@ -92,3 +93,26 @@ class ServerPort:
 
     def __set_name__(self, owner, name):
         self.name = name
+
+def login_required(func):
+    def checker(*args, **kwargs):
+        # проверяем, что первый аргумент - экземпляр MessageProcessor
+        # Импортить необходимо тут, иначе ошибка рекурсивного импорта.
+        from server import WorkingServer
+        if isinstance(args[0], WorkingServer):
+            found = False
+            for arg in args:
+                if isinstance(arg, socket.socket):
+                    for client in args[0].names:
+                        if args[0].names[client] == arg:
+                            found = True
+
+            for arg in args:
+                if isinstance(arg, dict):
+                    if ACTION in arg and arg[ACTION] == 'presence':
+                        found = True
+            if not found:
+                raise TypeError
+        return func(*args, **kwargs)
+
+    return checker

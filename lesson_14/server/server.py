@@ -14,7 +14,7 @@ from PyQt5.QtWidgets import QApplication
 from server_gui import MainWindow, gui_create_model, HistoryWindow, ConfigWindow, RegisterWindow, RemoveWindow
 from server_storage import Storage
 from log.server_log_config import server_log, log
-from server_resource import ServerVerifier, ServerPort, create_server_message, send_message, get_message
+from server_resource import ServerVerifier, ServerPort, create_server_message, send_message, get_message, login_required
 
 change_count_connection = True
 
@@ -96,6 +96,7 @@ class WorkingServer(threading.Thread, metaclass=ServerVerifier):
                 change_count_connection = True
 
     @log()
+    @login_required
     def create_answer(self):
         global change_count_connection
         while self.request_dict:
