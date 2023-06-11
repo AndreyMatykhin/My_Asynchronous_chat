@@ -1,0 +1,898 @@
+2023-05-30 23:47:25,159 INFO client_resource Отправлен запрос на удаление контакта user2 из список контактов пользователя user1
+2023-05-30 23:47:25,366 INFO client_resource Получен сообщение {'response': 201, 'alert': 'Пользователь user1 удален из списка контактов пользователя user2'} от сервера ('127.0.0.1', 7777)
+2023-05-30 23:47:25,367 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39538), raddr=('127.0.0.1', 7777)>,), {}) из функции run
+2023-05-30 23:47:34,675 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-05-30 23:47:34,687 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685479654.6756287, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-05-30 23:47:34,688 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-05-30 23:47:34,706 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-05-30 23:47:34,707 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-05-30 23:47:34,707 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-05-30 23:47:34,708 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685479654.7078114, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-05-30 23:47:34,709 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-05-30 23:47:34,914 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-714']} от сервера ('127.0.0.1', 7777)
+2023-05-30 23:47:34,915 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-05-30 23:47:34,916 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-05-30 23:47:34,916 INFO client Клиент запущен от пользователя user1
+2023-05-30 23:47:34,916 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-05-30 23:47:34,917 INFO client Запущены процессы
+2023-05-30 23:47:43,703 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-05-30 23:47:43,706 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685479663.7035353, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-05-30 23:47:43,706 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-05-30 23:47:43,747 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-714']} от сервера ('127.0.0.1', 7777)
+2023-05-30 23:47:43,749 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-05-30 23:47:43,750 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции run
+2023-05-30 23:47:43,751 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-05-30 23:47:43,752 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685479663.751136, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-05-30 23:47:43,753 INFO client_resource Отправлен запрос на получения списка контактов
+2023-05-30 23:47:43,964 INFO client_resource Получен сообщение {'response': 202, 'alert': '(accepted) — подтверждение'} от сервера ('127.0.0.1', 7777)
+2023-05-30 23:47:43,966 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-05-30 23:47:43,967 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции run
+2023-05-30 23:47:55,667 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-05-30 23:47:55,669 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>, {'action': 'add_contact', 'user_id': 'Guest-714', 'time': 1685479675.6670387, 'user_login': 'user1'}), {}) из функции send_add_contact
+2023-05-30 23:47:55,669 INFO client_resource Отправлен запрос на добавление контакта Guest-714 в список контактов пользователя user1
+2023-05-30 23:47:55,837 INFO client_resource Получен сообщение {'response': 201, 'alert': 'Пользователь user1 добавлен в список контактов пользователя Guest-714'} от сервера ('127.0.0.1', 7777)
+2023-05-30 23:47:55,838 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49548), raddr=('127.0.0.1', 7777)>,), {}) из функции run
+2023-06-01 06:21:27,138 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-01 06:21:27,189 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60050), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685589687.138717, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-01 06:21:27,190 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60050), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-01 06:21:27,233 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-01 06:21:27,234 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60050), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-01 06:21:27,234 INFO client Клиент запущен от пользователя user1
+2023-06-01 06:21:27,234 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-01 06:21:27,348 INFO client Запущены процессы
+2023-06-01 06:21:37,503 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-01 06:21:37,506 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60050), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1685589697.5031006, 'user': {'account_name': 'user1'}}), {}) из функции run
+2023-06-01 06:21:38,007 INFO client Завершение работы.
+2023-06-02 05:33:24,443 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 05:33:24,491 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33276), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685673204.4432127, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 05:33:24,492 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33276), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 05:33:24,555 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 05:33:24,556 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33276), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 05:33:24,556 INFO client Клиент запущен от пользователя user1
+2023-06-02 05:33:24,557 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 05:33:24,675 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 05:33:24,676 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33276), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685673204.6750407, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 05:33:24,676 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 05:33:24,769 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 05:33:24,771 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33276), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 05:33:24,773 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33276), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 05:33:24,773 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 05:33:24,775 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33276), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685673204.7733943, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 05:33:24,775 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 05:33:24,997 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 05:33:24,999 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33276), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-02 05:33:25,000 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33276), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 05:33:25,035 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-02 05:33:25,037 INFO client Запущены процессы
+2023-06-02 05:35:06,491 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 05:35:06,493 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33276), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1685673306.4906936, 'user': {'account_name': 'user1'}}), {}) из функции run
+2023-06-02 05:35:06,994 INFO client Завершение работы.
+2023-06-02 05:40:09,203 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 05:40:09,251 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685673609.203467, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 05:40:09,252 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 05:40:09,252 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 05:40:09,252 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 05:40:09,253 INFO client Клиент запущен от пользователя user1
+2023-06-02 05:40:09,253 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 05:40:09,289 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 05:40:09,290 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685673609.2895832, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 05:40:09,290 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 05:40:09,441 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 05:40:09,442 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 05:40:09,443 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 05:40:09,444 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 05:40:09,445 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685673609.444011, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 05:40:09,445 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 05:40:09,658 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 05:40:09,659 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-02 05:40:09,660 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 05:40:09,691 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-02 05:40:09,693 INFO client Запущены процессы
+2023-06-02 05:40:29,995 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 05:40:29,998 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'time': 1685673629.9949906, 'to': 'user1', 'from': 'user1', 'encoding': 'ascii', 'message': 'Привет'}), {}) из функции send_client_message
+2023-06-02 05:40:30,120 INFO client_resource Получен сообщение {'action': 'msg', 'time': 1685673629.9949906, 'to': 'user1', 'from': 'user1', 'encoding': 'ascii', 'message': 'Привет'} от сервера ('127.0.0.1', 7777)
+2023-06-02 05:40:30,121 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59978), raddr=('127.0.0.1', 7777)>,), {}) из функции run
+2023-06-02 06:07:37,519 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:07:37,568 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685675257.5182908, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 06:07:37,568 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 06:07:38,674 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:07:38,675 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 06:07:38,675 INFO client Клиент запущен от пользователя user1
+2023-06-02 06:07:38,676 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 06:07:38,733 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:07:38,734 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685675258.7330897, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 06:07:38,734 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 06:07:38,889 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:07:38,891 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 06:07:38,892 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:07:38,893 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:07:38,894 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685675258.893045, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 06:07:38,895 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 06:07:39,119 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:07:39,121 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-02 06:07:39,122 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:07:39,165 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-02 06:07:39,167 INFO client Запущены процессы
+2023-06-02 06:07:53,879 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:07:53,882 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'time': 1685675273.8787408, 'to': 'user1', 'from': 'user1', 'encoding': 'ascii', 'message': 'Привет'}), {}) из функции send_client_message
+2023-06-02 06:07:53,966 INFO client_resource Получен сообщение {'action': 'msg', 'time': 1685675273.8787408, 'to': 'user1', 'from': 'user1', 'encoding': 'ascii', 'message': 'Привет'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:07:53,967 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36524), raddr=('127.0.0.1', 7777)>,), {}) из функции run
+2023-06-02 06:12:48,963 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:12:49,017 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685675568.9635015, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 06:12:49,019 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 06:12:49,019 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:12:49,021 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 06:12:49,021 INFO client Клиент запущен от пользователя user1
+2023-06-02 06:12:49,022 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 06:12:49,060 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:12:49,061 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685675569.0602758, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 06:12:49,061 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 06:12:49,201 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:12:49,202 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 06:12:49,203 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:12:49,204 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:12:49,205 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685675569.204234, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 06:12:49,205 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 06:12:49,416 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:12:49,417 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-02 06:12:49,418 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:12:49,447 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-02 06:12:49,449 INFO client Запущены процессы
+2023-06-02 06:13:01,256 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:13:01,260 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'time': 1685675581.2562015, 'to': 'user1', 'from': 'user1', 'encoding': 'ascii', 'message': 'Привет'}), {}) из функции send_client_message
+2023-06-02 06:13:01,456 INFO client_resource Получен сообщение {'action': 'msg', 'time': 1685675581.2562015, 'to': 'user1', 'from': 'user1', 'encoding': 'ascii', 'message': 'Привет'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:13:01,457 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>,), {}) из функции run
+2023-06-02 06:15:31,817 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:15:31,818 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'time': 1685675731.8167198, 'to': 'user1', 'from': 'user1', 'encoding': 'ascii', 'message': 'второе'}), {}) из функции send_client_message
+2023-06-02 06:15:31,835 INFO client_resource Получен сообщение {'action': 'msg', 'time': 1685675731.8167198, 'to': 'user1', 'from': 'user1', 'encoding': 'ascii', 'message': 'второе'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:15:31,836 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>,), {}) из функции run
+2023-06-02 06:18:25,085 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:18:25,086 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40044), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1685675905.0848796, 'user': {'account_name': 'user1'}}), {}) из функции run
+2023-06-02 06:18:25,587 INFO client Завершение работы.
+2023-06-02 06:18:28,076 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:18:28,125 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60750), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685675908.0766346, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 06:18:28,125 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60750), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 06:18:28,126 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:18:28,127 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60750), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 06:18:28,127 INFO client Клиент запущен от пользователя user1
+2023-06-02 06:18:28,127 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 06:18:28,162 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:18:28,163 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60750), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685675908.1624646, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 06:18:28,163 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 06:18:28,323 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:18:28,324 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60750), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 06:18:28,325 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60750), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:18:28,326 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:18:28,327 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60750), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685675908.3259413, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 06:18:28,327 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 06:18:28,537 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:18:28,539 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60750), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-02 06:18:28,540 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60750), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:18:28,573 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-02 06:18:28,575 INFO client Запущены процессы
+2023-06-02 06:21:56,700 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:21:56,703 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60750), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1685676116.7003603, 'user': {'account_name': 'user1'}}), {}) из функции run
+2023-06-02 06:21:57,204 INFO client Завершение работы.
+2023-06-02 06:22:21,511 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:22:21,556 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685676141.5115662, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 06:22:21,557 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 06:22:21,557 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:22:21,558 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 06:22:21,558 INFO client Клиент запущен от пользователя user1
+2023-06-02 06:22:21,558 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 06:22:21,590 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:22:21,591 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685676141.590262, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 06:22:21,591 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 06:22:21,758 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:22:21,760 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 06:22:21,761 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:22:21,761 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:22:21,762 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685676141.7614868, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 06:22:21,763 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 06:22:21,973 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:22:21,974 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-02 06:22:21,976 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:22:22,011 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-02 06:22:22,012 INFO client Запущены процессы
+2023-06-02 06:22:29,709 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:22:29,711 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685676149.7087142, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 06:22:29,712 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 06:22:29,803 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:22:29,805 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 06:22:29,806 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции run
+2023-06-02 06:24:06,993 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:24:06,995 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38370), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1685676246.9932399, 'user': {'account_name': 'user1'}}), {}) из функции run
+2023-06-02 06:24:07,496 INFO client Завершение работы.
+2023-06-02 06:24:37,199 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:24:37,248 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55562), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685676277.1997104, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 06:24:37,249 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55562), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 06:24:37,249 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:24:37,250 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55562), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 06:24:37,250 INFO client Клиент запущен от пользователя user1
+2023-06-02 06:24:37,250 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 06:24:37,284 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:24:37,285 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55562), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685676277.2841144, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 06:24:37,285 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 06:24:37,440 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:24:37,441 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55562), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 06:24:37,443 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55562), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:24:37,443 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:24:37,444 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55562), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685676277.4435518, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 06:24:37,445 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 06:24:37,446 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55562), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:25:10,831 CRITICAL client Проверьте правильность указанных адреса и порта
+2023-06-02 06:25:20,977 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:25:21,032 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38074), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685676320.977732, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 06:25:21,033 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38074), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 06:25:21,100 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:25:21,101 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38074), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 06:25:21,101 INFO client Клиент запущен от пользователя user1
+2023-06-02 06:25:21,101 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 06:25:21,133 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:25:21,134 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38074), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685676321.1335592, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 06:25:21,134 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 06:25:21,313 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:25:21,314 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38074), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 06:25:21,315 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38074), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:25:21,316 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:25:21,317 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38074), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685676321.3159, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 06:25:21,317 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 06:25:21,318 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38074), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:30:00,516 CRITICAL client Проверьте правильность указанных адреса и порта
+2023-06-02 06:30:09,118 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:30:09,164 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56566), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685676609.1182828, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 06:30:09,165 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56566), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 06:30:09,245 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:30:09,246 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56566), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 06:30:09,246 INFO client Клиент запущен от пользователя user1
+2023-06-02 06:30:09,247 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 06:30:09,302 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:30:09,303 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56566), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685676609.3017683, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 06:30:09,303 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 06:30:09,452 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:30:09,453 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56566), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 06:30:09,454 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56566), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:30:09,454 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:30:09,456 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56566), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685676609.454764, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 06:30:09,456 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 06:30:09,457 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56566), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:31:18,568 CRITICAL client Проверьте правильность указанных адреса и порта
+2023-06-02 06:31:26,192 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:31:26,253 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33266), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685676686.1922302, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 06:31:26,253 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33266), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 06:31:26,294 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:31:26,295 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33266), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 06:31:26,296 INFO client Клиент запущен от пользователя user1
+2023-06-02 06:31:26,296 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 06:31:26,332 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:31:26,334 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33266), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685676686.332761, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 06:31:26,334 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 06:31:26,502 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:31:26,504 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33266), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 06:31:26,505 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33266), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:31:26,505 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:31:26,506 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33266), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685676686.5054088, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 06:31:26,506 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 06:31:26,507 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33266), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:42:16,602 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:42:16,648 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55970), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685677336.602137, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-02 06:42:16,649 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55970), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-02 06:42:16,728 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:42:16,729 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55970), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-02 06:42:16,729 INFO client Клиент запущен от пользователя user1
+2023-06-02 06:42:16,730 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-02 06:42:16,767 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:42:16,768 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55970), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685677336.7674072, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-02 06:42:16,768 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-02 06:42:16,940 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-02 06:42:16,941 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55970), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-02 06:42:16,942 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55970), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-02 06:42:16,943 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-02 06:42:16,944 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55970), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685677336.9433165, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-02 06:42:16,945 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-02 06:42:17,447 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55970), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:11:09,705 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:11:09,754 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40920), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685945469.7058177, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-05 09:11:09,755 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40920), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-05 09:11:09,838 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:11:09,839 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40920), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-05 09:11:09,839 INFO client Клиент запущен от пользователя user1
+2023-06-05 09:11:09,840 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-05 09:11:09,874 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:11:09,875 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40920), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685945469.8743198, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-05 09:11:09,875 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-05 09:11:10,050 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:11:10,052 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40920), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-05 09:11:10,053 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40920), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:11:10,054 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:11:10,055 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40920), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685945470.0539734, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-05 09:11:10,056 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:17:44,535 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:17:44,580 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52088), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685945864.5349398, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-05 09:17:44,581 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52088), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-05 09:17:44,665 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:17:44,666 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52088), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-05 09:17:44,666 INFO client Клиент запущен от пользователя user1
+2023-06-05 09:17:44,667 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-05 09:17:44,701 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:17:44,702 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52088), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685945864.7014508, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-05 09:17:44,702 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-05 09:17:44,876 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:17:44,878 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52088), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-05 09:17:44,879 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52088), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:17:44,879 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:17:44,880 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52088), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685945864.8795755, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-05 09:17:44,881 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:19:37,233 CRITICAL client Проверьте правильность указанных адреса и порта
+2023-06-05 09:19:44,614 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:19:44,662 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39172), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685945984.613986, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-05 09:19:44,662 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39172), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-05 09:19:44,740 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:19:44,741 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39172), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-05 09:19:44,741 INFO client Клиент запущен от пользователя user1
+2023-06-05 09:19:44,742 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-05 09:19:44,777 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:19:44,778 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39172), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685945984.7769804, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-05 09:19:44,778 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-05 09:19:44,951 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:19:44,953 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39172), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-05 09:19:44,954 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39172), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:19:44,954 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:19:44,955 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39172), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685945984.9545767, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-05 09:19:44,955 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:19:45,778 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:19:45,780 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39172), raddr=('127.0.0.1', 7777)>,), {}) из функции run
+2023-06-05 09:19:46,479 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39172), raddr=('127.0.0.1', 7777)>, 'user1', <client_storage.Storage object at 0x7fe32e598bb0>), {}) из функции update_list_users_database
+2023-06-05 09:20:36,081 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:20:36,126 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55698), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685946036.0810966, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-05 09:20:36,127 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55698), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-05 09:20:36,127 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:20:36,128 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55698), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-05 09:20:36,128 INFO client Клиент запущен от пользователя user1
+2023-06-05 09:20:36,129 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-05 09:20:36,160 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:20:36,161 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55698), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685946036.1606634, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-05 09:20:36,161 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-05 09:20:36,321 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:20:36,322 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55698), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-05 09:20:36,323 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55698), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:20:36,324 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:20:36,325 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55698), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685946036.324018, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-05 09:20:36,325 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:20:37,161 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:20:37,164 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55698), raddr=('127.0.0.1', 7777)>,), {}) из функции run
+2023-06-05 09:20:37,848 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55698), raddr=('127.0.0.1', 7777)>, 'user1', <client_storage.Storage object at 0x7f748b598bb0>), {}) из функции update_list_users_database
+2023-06-05 09:27:19,678 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:27:19,728 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 43542), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685946439.678757, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-05 09:27:19,729 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 43542), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-05 09:27:19,729 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:27:19,730 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 43542), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-05 09:27:19,730 INFO client Клиент запущен от пользователя user1
+2023-06-05 09:27:19,730 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-05 09:27:19,772 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:27:19,773 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 43542), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685946439.772771, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-05 09:27:19,774 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-05 09:27:19,916 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:27:19,917 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 43542), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-05 09:27:19,918 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 43542), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:27:50,394 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:27:50,440 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685946470.3944921, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-05 09:27:50,441 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-05 09:27:50,441 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:27:50,442 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-05 09:27:50,442 INFO client Клиент запущен от пользователя user1
+2023-06-05 09:27:50,443 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-05 09:27:50,478 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:27:50,479 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685946470.4779243, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-05 09:27:50,479 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-05 09:27:50,633 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:27:50,634 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-05 09:27:50,635 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:27:50,636 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:27:50,636 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685946470.6358142, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-05 09:27:50,637 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:27:50,850 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:27:50,851 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-05 09:27:50,853 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:27:50,890 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-05 09:27:50,891 INFO client Запущены процессы
+2023-06-05 09:28:25,341 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:28:25,345 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685946505.3414714, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-05 09:28:25,346 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:28:25,551 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:28:25,553 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-05 09:28:25,554 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции run
+2023-06-05 09:28:31,880 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:28:31,882 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685946511.880614, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-05 09:28:31,882 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:28:31,982 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:28:31,984 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-05 09:28:31,985 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции run
+2023-06-05 09:28:46,306 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:28:46,308 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38870), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1685946526.3063047, 'user': {'account_name': 'user1'}}), {}) из функции run
+2023-06-05 09:28:46,809 INFO client Завершение работы.
+2023-06-05 09:34:35,376 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:34:35,421 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42422), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685946875.3766053, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-05 09:34:35,422 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42422), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-05 09:34:35,422 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:34:35,423 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42422), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-05 09:34:35,423 INFO client Клиент запущен от пользователя user1
+2023-06-05 09:34:35,424 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-05 09:34:35,456 INFO client Запущены процессы
+2023-06-05 09:34:35,458 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:34:35,459 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42422), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685946875.457985, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-05 09:34:35,459 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-05 09:34:35,625 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:34:35,626 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42422), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-05 09:34:35,627 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42422), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:34:35,628 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:34:35,629 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42422), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685946875.6280844, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-05 09:34:35,629 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:34:36,459 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:34:36,461 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42422), raddr=('127.0.0.1', 7777)>,), {}) из функции run
+2023-06-05 09:34:37,154 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42422), raddr=('127.0.0.1', 7777)>, 'user1', <client_storage.Storage object at 0x7f15988b0610>), {}) из функции update_list_users_database
+2023-06-05 09:45:22,083 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:45:22,132 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37304), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685947522.0836155, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-05 09:45:22,133 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37304), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-05 09:45:22,133 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:45:22,133 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37304), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-05 09:45:22,134 INFO client Клиент запущен от пользователя user1
+2023-06-05 09:45:22,134 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-05 09:45:22,166 INFO client Запущены процессы
+2023-06-05 09:45:22,167 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:45:22,168 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37304), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685947522.1673405, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-05 09:45:22,168 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-05 09:45:22,319 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:45:22,320 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37304), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-05 09:45:22,321 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37304), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:45:22,321 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:45:22,322 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37304), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685947522.3214476, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-05 09:45:22,322 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:45:22,530 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:45:22,531 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37304), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-05 09:45:22,532 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37304), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:45:22,563 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-05 09:45:32,442 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:45:32,445 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37304), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1685947532.4423947, 'user': {'account_name': 'user1'}}), {}) из функции run
+2023-06-05 09:45:32,946 INFO client Завершение работы.
+2023-06-05 09:54:37,469 DEBUG client Вы неуказали имя пользователя при запуске. Для работы выбрано имя пользователя  Guest-395
+2023-06-05 09:54:37,470 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:54:37,518 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33378), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685948077.4706542, 'type': 'status', 'user': {'account_name': 'Guest-395', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-05 09:54:37,519 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33378), raddr=('127.0.0.1', 7777)>, 'Guest-395'), {}) из функции create_connect
+2023-06-05 09:54:37,567 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:54:37,567 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33378), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-05 09:54:37,568 INFO client Клиент запущен от пользователя Guest-395
+2023-06-05 09:54:37,568 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-05 09:54:37,680 INFO client Запущены процессы
+2023-06-05 09:54:37,681 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:54:37,682 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33378), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685948077.68093, 'user': {'account_name': 'Guest-395'}}), {}) из функции send_get_all_users
+2023-06-05 09:54:37,683 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-05 09:54:37,774 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:54:37,776 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33378), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-05 09:54:37,777 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33378), raddr=('127.0.0.1', 7777)>, 'Guest-395'), {}) из функции update_list_users_database
+2023-06-05 09:54:37,778 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:54:37,779 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33378), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685948077.7780728, 'user': {'account_name': 'Guest-395'}}), {}) из функции send_get_contacts
+2023-06-05 09:54:37,780 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:54:37,992 INFO client_resource Получен сообщение {'response': 202, 'alert': '(accepted) — подтверждение'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:54:37,993 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33378), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-05 09:54:37,994 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33378), raddr=('127.0.0.1', 7777)>, 'Guest-395'), {}) из функции update_list_users_database
+2023-06-05 09:54:38,025 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-05 09:54:49,090 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:54:49,136 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39874), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1685948089.0906808, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-05 09:54:49,137 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39874), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции create_connect
+2023-06-05 09:54:49,172 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:54:49,173 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39874), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-05 09:54:49,174 INFO client Клиент запущен от пользователя user1
+2023-06-05 09:54:49,174 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-05 09:54:49,208 INFO client Запущены процессы
+2023-06-05 09:54:49,209 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:54:49,210 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39874), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1685948089.2090275, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-05 09:54:49,210 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-05 09:54:49,385 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:54:49,386 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39874), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-05 09:54:49,387 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39874), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:54:49,388 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:54:49,389 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39874), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1685948089.387984, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-05 09:54:49,389 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-05 09:54:49,600 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-05 09:54:49,602 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39874), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-05 09:54:49,603 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39874), raddr=('127.0.0.1', 7777)>, 'user1'), {}) из функции update_list_users_database
+2023-06-05 09:54:49,696 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-05 09:55:04,979 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-05 09:55:04,981 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39874), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1685948104.979144, 'user': {'account_name': 'user1'}}), {}) из функции run
+2023-06-05 09:55:05,482 INFO client Завершение работы.
+2023-06-06 17:31:47,372 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-06 17:31:47,438 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51530), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686061907.372198, 'type': 'status', 'user': {'account_name': 'user3', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-06 17:31:47,439 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51530), raddr=('127.0.0.1', 7777)>, 'user3'), {}) из функции create_connect
+2023-06-06 17:31:47,491 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-06 17:31:47,493 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51530), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connect
+2023-06-06 17:31:47,493 INFO client Клиент запущен от пользователя user3
+2023-06-06 17:31:47,494 DEBUG client_log_config Вызвана функция create_connect с аргументами ((), {}) из функции main
+2023-06-06 17:31:47,636 INFO client Запущены процессы
+2023-06-06 17:31:47,637 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-06 17:31:47,638 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51530), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686061907.6375034, 'user': {'account_name': 'user3'}}), {}) из функции send_get_all_users
+2023-06-06 17:31:47,639 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-06 17:31:47,698 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3']} от сервера ('127.0.0.1', 7777)
+2023-06-06 17:31:47,699 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51530), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-06 17:31:47,701 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51530), raddr=('127.0.0.1', 7777)>, 'user3'), {}) из функции update_list_users_database
+2023-06-06 17:31:47,701 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-06 17:31:47,703 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51530), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686061907.7014782, 'user': {'account_name': 'user3'}}), {}) из функции send_get_contacts
+2023-06-06 17:31:47,703 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-06 17:31:47,922 INFO client_resource Получен сообщение {'response': 202, 'alert': '(accepted) — подтверждение'} от сервера ('127.0.0.1', 7777)
+2023-06-06 17:31:47,923 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51530), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-06 17:31:47,924 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51530), raddr=('127.0.0.1', 7777)>, 'user3'), {}) из функции update_list_users_database
+2023-06-06 17:31:47,952 INFO client Список пользователей мессенджера в базе обновлен
+2023-06-06 17:31:56,112 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-06 17:31:56,115 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51530), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1686061916.1126003, 'user': {'account_name': 'user3'}}), {}) из функции run
+2023-06-06 17:31:56,616 INFO client Завершение работы.
+2023-06-10 05:22:16,525 CRITICAL client Попытка запуска клиента с неподходящим номером порта: 777. Допустимы адреса с 1024 до 65535. Клиент завершается.
+2023-06-07 21:47:56,752 CRITICAL client_resource Не удалось установить соединение с сервером
+2023-06-07 21:52:27,778 CRITICAL client_resource Не удалось установить соединение с сервером
+2023-06-07 21:52:44,131 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 21:52:44,191 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=25, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59140), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686163964.1315954, 'type': 'status', 'user': {'account_name': 'user', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 21:52:44,191 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 21:52:44,470 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 21:52:44,471 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=25, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59140), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 21:52:44,472 INFO client_resource Клиент запущен от пользователя user
+2023-06-07 21:52:44,472 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 21:56:09,834 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 21:56:09,897 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=25, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56578), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686164169.8337302, 'type': 'status', 'user': {'account_name': 'user', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 21:56:09,898 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 21:56:10,064 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 21:56:10,065 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=25, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56578), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 21:56:10,065 INFO client_resource Клиент запущен от пользователя user
+2023-06-07 21:56:10,066 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 21:58:36,362 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 21:58:36,411 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45794), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686164316.3623145, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 21:58:36,411 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 21:58:36,412 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 21:58:36,413 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45794), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 21:58:36,413 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 21:58:36,413 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:01:53,499 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:01:53,550 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 44768), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686164513.4992442, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:01:53,550 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:01:53,551 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:01:53,552 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 44768), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:01:53,552 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:01:53,552 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:04:36,999 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:04:37,049 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59790), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686164676.999586, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:04:37,050 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:04:37,050 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:04:37,051 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59790), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:04:37,051 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:04:37,051 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:05:30,921 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:05:30,969 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36558), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686164730.9212542, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:05:30,970 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:05:30,970 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:05:30,971 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36558), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:05:30,971 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:05:30,971 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:17:37,463 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:17:37,517 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 43520), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686165457.4632154, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:17:37,518 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:17:37,519 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:17:37,519 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 43520), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:17:37,520 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:17:37,520 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:17:39,023 CRITICAL client_resource Потеряно соединение с сервером.
+2023-06-07 22:21:19,853 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:21:19,930 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 34946), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686165679.853508, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:21:19,931 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:21:19,962 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:21:19,962 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 34946), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:21:19,963 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:21:19,963 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:21:21,467 CRITICAL client_resource Потеряно соединение с сервером.
+2023-06-07 22:23:12,855 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:23:12,923 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 46488), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686165792.855483, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:23:12,924 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:23:13,171 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:23:13,171 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 46488), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:23:13,172 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:23:13,172 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:23:14,675 CRITICAL client_resource Потеряно соединение с сервером.
+2023-06-07 22:23:22,772 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:23:22,834 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33602), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686165802.7719178, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:23:22,835 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:23:22,836 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:23:22,837 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33602), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:23:22,837 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:23:22,837 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:23:24,340 CRITICAL client_resource Потеряно соединение с сервером.
+2023-06-07 22:23:55,600 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:23:55,657 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 44380), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686165835.5998547, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:23:55,658 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:23:55,659 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:23:55,659 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 44380), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:23:55,660 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:23:55,660 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:23:57,162 CRITICAL client_resource Потеряно соединение с сервером.
+2023-06-07 22:29:51,523 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:29:51,595 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56968), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686166191.5231645, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:29:51,596 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:29:51,597 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:29:51,597 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56968), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:29:51,598 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:29:51,598 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:31:59,701 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:31:59,754 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60002), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686166319.7012699, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:31:59,755 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:31:59,755 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:31:59,756 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60002), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:31:59,756 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:31:59,757 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:48:09,547 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:48:09,598 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47126), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686167289.5476995, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 22:48:09,599 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 22:48:09,599 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:48:09,600 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47126), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 22:48:09,600 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 22:48:09,600 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 22:48:09,600 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:48:09,601 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47126), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686167289.6006527, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 22:48:09,601 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 22:48:09,787 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:48:09,788 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47126), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 22:48:09,789 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 22:48:09,790 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 22:48:09,791 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47126), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686167289.79023, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 22:48:09,791 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 22:48:10,051 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 22:48:10,052 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47126), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 22:48:10,054 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 22:48:10,089 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:09:13,678 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:09:13,728 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40944), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686168553.6778789, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:09:13,729 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:09:13,729 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:09:13,730 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40944), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:09:13,730 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:09:13,730 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:09:13,730 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:09:13,731 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40944), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686168553.730667, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:09:13,732 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:09:13,916 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:09:13,918 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40944), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:09:13,919 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:09:13,919 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:09:13,921 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40944), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686168553.9196448, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:09:13,921 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:09:14,133 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:09:14,135 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40944), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:09:14,136 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:09:14,167 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:09:38,065 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:09:38,120 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 44226), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686168578.0650885, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:09:38,121 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:09:38,122 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:09:38,122 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 44226), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:09:38,123 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:09:38,123 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:09:38,123 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:09:38,124 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 44226), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686168578.1235144, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:09:38,124 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:09:38,303 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:09:38,304 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 44226), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:09:38,305 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:09:38,306 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:09:38,307 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 44226), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686168578.3062613, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:09:38,308 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:09:38,519 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:09:38,520 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 44226), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:09:38,522 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:09:38,555 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:10:41,320 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:10:41,371 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40812), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686168641.3205965, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:10:41,372 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:10:41,372 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:10:41,373 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40812), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:10:41,373 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:10:41,373 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:10:41,374 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:10:41,375 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40812), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686168641.3741403, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:10:41,375 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:10:41,563 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:10:41,565 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40812), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:10:41,566 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:10:41,566 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:10:41,567 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40812), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686168641.566329, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:10:41,568 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:10:41,779 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:10:41,781 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 40812), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:10:41,782 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:10:41,815 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:12:24,092 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:12:24,152 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 41198), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686168744.0920212, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:12:24,153 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:12:24,153 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:12:24,154 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 41198), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:12:24,154 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:12:24,154 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:12:24,155 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:12:24,156 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 41198), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686168744.1550071, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:12:24,156 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:12:24,333 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:12:24,335 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 41198), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:12:24,336 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:12:24,336 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:12:24,338 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 41198), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686168744.3365996, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:12:24,338 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:12:24,549 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:12:24,551 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 41198), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:12:24,552 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:12:24,588 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:18:28,601 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:18:28,657 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 35732), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686169108.601664, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:18:28,658 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:18:28,658 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:18:28,659 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 35732), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:18:28,659 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:18:28,659 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:18:28,660 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:18:28,661 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 35732), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686169108.6599503, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:18:28,661 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:18:28,841 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:18:28,843 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 35732), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:18:28,844 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:18:28,844 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:18:28,846 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 35732), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686169108.844508, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:18:28,846 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:18:29,056 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:18:29,057 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 35732), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:18:29,058 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:18:29,097 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:19:37,934 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:19:37,982 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59740), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686169177.934452, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:19:37,983 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:19:37,983 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:19:37,984 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59740), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:19:37,985 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:19:37,985 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:19:37,985 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:19:37,986 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59740), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686169177.9854813, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:19:37,987 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:19:38,173 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:19:38,174 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59740), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:19:38,175 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:19:38,176 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:19:38,177 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59740), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686169178.1762204, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:19:38,178 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:19:38,389 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:19:38,391 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59740), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:19:38,392 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:19:38,440 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:20:19,500 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:20:19,550 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39398), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686169219.5001843, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:20:19,550 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:20:19,551 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:20:19,551 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39398), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:20:19,551 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:20:19,552 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:20:19,552 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:20:19,553 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39398), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686169219.552212, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:20:19,553 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:20:19,741 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:20:19,743 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39398), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:20:19,744 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:20:19,744 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:20:19,745 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39398), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686169219.74434, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:20:19,746 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:20:19,957 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:20:19,959 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39398), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:20:19,960 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:20:19,995 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:21:26,922 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:21:26,970 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45178), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686169286.922278, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:21:26,971 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:21:26,971 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:21:26,972 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45178), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:21:26,972 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:21:26,972 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:21:26,973 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:21:26,973 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45178), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686169286.9729276, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:21:26,974 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:21:27,163 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:21:27,164 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45178), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:21:27,165 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:21:27,166 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:21:27,167 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45178), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686169287.1658242, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:21:27,167 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:21:27,379 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:21:27,381 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45178), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:21:27,382 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:21:27,417 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:26:13,946 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:26:13,995 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37958), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686169573.945973, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:26:13,995 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:26:13,996 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:26:13,997 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37958), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:26:13,997 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:26:13,997 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:26:13,997 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:26:13,998 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37958), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686169573.997595, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:26:13,998 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:26:14,186 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:26:14,188 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37958), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:26:14,189 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:26:14,190 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:26:14,191 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37958), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686169574.1900477, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:26:14,191 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:26:14,402 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:26:14,403 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37958), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:26:14,404 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:26:14,435 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:29:40,689 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:29:40,743 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36774), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686169780.688833, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:29:40,743 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:29:40,744 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:29:40,744 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36774), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:29:40,745 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:29:40,745 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:29:40,745 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:29:40,746 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36774), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686169780.745396, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:29:40,746 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:29:40,925 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:29:40,927 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36774), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:29:40,928 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:29:40,928 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:29:40,930 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36774), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686169780.9285643, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:29:40,930 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:29:41,141 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:29:41,142 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 36774), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:29:41,144 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:29:41,184 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:34:05,945 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:34:05,995 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56518), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686170045.9456358, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:34:05,995 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:34:05,996 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:34:05,996 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56518), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:34:05,996 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:34:05,997 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:34:05,997 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:34:05,998 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56518), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686170045.9972687, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:34:05,998 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:34:06,187 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:34:06,189 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56518), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:34:06,189 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:34:06,190 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:34:06,191 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56518), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686170046.1902807, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:34:06,191 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:34:06,402 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:34:06,404 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56518), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:34:06,405 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:34:06,441 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:40:37,340 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:40:37,388 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33816), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686170437.340323, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:40:37,389 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:40:37,389 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:40:37,390 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33816), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:40:37,390 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:40:37,390 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:40:37,391 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:40:37,391 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33816), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686170437.390878, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:40:37,391 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:40:37,588 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:40:37,590 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33816), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
+2023-06-07 23:40:37,591 DEBUG client_log_config Вызвана функция send_get_all_users с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:40:37,591 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:40:37,592 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33816), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1686170437.591569, 'user': {'account_name': 'user1'}}), {}) из функции send_get_contacts
+2023-06-07 23:40:37,593 INFO client_resource Отправлен запрос на получения списка контактов
+2023-06-07 23:40:37,803 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user2']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:40:37,805 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33816), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_contacts
+2023-06-07 23:40:37,807 DEBUG client_log_config Вызвана функция send_get_contacts с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции update_list_users_database
+2023-06-07 23:40:37,843 INFO client_resource Список пользователей мессенджера в базе обновлен
+2023-06-07 23:44:52,108 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:44:52,158 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47340), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686170692.1080678, 'type': 'status', 'user': {'account_name': 'user1', 'status': 'Yep, I am here!'}}), {}) из функции send_presence_message
+2023-06-07 23:44:52,158 DEBUG client_log_config Вызвана функция send_presence_message с аргументами ((<ClientSocket(Thread-1, initial)>,), {}) из функции create_connection
+2023-06-07 23:44:52,159 INFO client_resource Получен сообщение {'response': 200, 'alert': 'OK'} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:44:52,159 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47340), raddr=('127.0.0.1', 7777)>,), {}) из функции create_connection
+2023-06-07 23:44:52,160 INFO client_resource Клиент запущен от пользователя user1
+2023-06-07 23:44:52,160 INFO client_resource Соединение с сервером успешно установлено.
+2023-06-07 23:44:52,160 INFO client_resource Сообщение отправлено на сервер ('127.0.0.1', 7777)
+2023-06-07 23:44:52,161 DEBUG client_log_config Вызвана функция send_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47340), raddr=('127.0.0.1', 7777)>, {'action': 'all_users', 'time': 1686170692.1605744, 'user': {'account_name': 'user1'}}), {}) из функции send_get_all_users
+2023-06-07 23:44:52,161 INFO client_resource Отправлен запрос на получения списка всех пользователей
+2023-06-07 23:44:52,345 INFO client_resource Получен сообщение {'response': 202, 'alert': ['user1', 'user2', 'Guest-395', 'user3', 'user']} от сервера ('127.0.0.1', 7777)
+2023-06-07 23:44:52,346 DEBUG client_log_config Вызвана функция get_message с аргументами ((<socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47340), raddr=('127.0.0.1', 7777)>,), {}) из функции send_get_all_users
