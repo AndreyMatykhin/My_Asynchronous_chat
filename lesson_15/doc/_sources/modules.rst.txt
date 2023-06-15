@@ -1,0 +1,21 @@
+server
+======
+
+.. toctree::
+   :maxdepth: 4
+
+   server
+   server_gui
+   server_resource
+   server_storage
+
+client
+======
+
+.. toctree::
+   :maxdepth: 4
+
+   client
+   client_gui
+   client_resource
+   client_storage

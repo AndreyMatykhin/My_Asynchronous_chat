@@ -1,0 +1,7 @@
+client\_resource module
+=======================
+
+.. automodule:: client_resource
+   :members:
+   :undoc-members:
+   :show-inheritance:

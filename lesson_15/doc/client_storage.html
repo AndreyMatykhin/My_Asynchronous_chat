@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>client_storage module &#8212; документация My-messenger 1</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="client_resource module" href="client_resource.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-client_storage">
+<span id="client-storage-module"></span><h1>client_storage module<a class="headerlink" href="#module-client_storage" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="client_storage.Storage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">client_storage.</span></span><span class="sig-name descname"><span class="pre">Storage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс - оболочка для работы с базой данных клиента.
+Использует SQLite базу данных, реализован с помощью
+SQLAlchemy ORM и используется классический подход.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="client_storage.Storage.InputServesMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InputServesMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.InputServesMessage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс - отображение таблицы входящих сервесных сообщений.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="client_storage.Storage.ListUsers">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ListUsers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">login</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_contact</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.ListUsers" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс - отображение для таблицы всех пользователей.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="client_storage.Storage.OutputServesMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OutputServesMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">option</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.OutputServesMessage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс - отображения таблицы исходящих сервесных сообщений.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="client_storage.Storage.UserMessageHistory">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UserMessageHistory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">from_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.UserMessageHistory" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс - отображения пользовательских сообщений.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client_storage.Storage.add_all_users">
+<span class="sig-name descname"><span class="pre">add_all_users</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_users</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_contact</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.add_all_users" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метод добавления в таблюцу списка пользователей и списка контактов.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client_storage.Storage.add_contact">
+<span class="sig-name descname"><span class="pre">add_contact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nickname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.add_contact" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метод добаввления пользователя в список контактов</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client_storage.Storage.all_contacts">
+<span class="sig-name descname"><span class="pre">all_contacts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.all_contacts" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метод получения списка контактов.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client_storage.Storage.all_no_contact">
+<span class="sig-name descname"><span class="pre">all_no_contact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.all_no_contact" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метод получения списка пользователей не входящих в списко контактов.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client_storage.Storage.all_users">
+<span class="sig-name descname"><span class="pre">all_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.all_users" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метод получения списка всех полользователей.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client_storage.Storage.check_contact">
+<span class="sig-name descname"><span class="pre">check_contact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nickname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.check_contact" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Мметод проверки наличия пользователя в списке контактов.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client_storage.Storage.del_contact">
+<span class="sig-name descname"><span class="pre">del_contact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nickname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.del_contact" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метод удаления пользователя из списка котактов.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client_storage.Storage.get_history_of_correspondence">
+<span class="sig-name descname"><span class="pre">get_history_of_correspondence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nickname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.get_history_of_correspondence" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метод получения из базы истории переписки с другим пользователем.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client_storage.Storage.get_serves_message">
+<span class="sig-name descname"><span class="pre">get_serves_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_marker</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.get_serves_message" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метод получения из базы сервесных сообщений по коду и времени</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client_storage.Storage.save_message">
+<span class="sig-name descname"><span class="pre">save_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_storage.Storage.save_message" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метод сохранения пользлвательских сообщений в базе.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">My-messenger</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">server</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html#client">client</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="client.html">client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client_gui.html">client_gui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client_resource.html">client_resource module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">client_storage module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">server</a><ul>
+      <li>Previous: <a href="client_resource.html" title="предыдущая глава">client_resource module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Matykhun_Andrey.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/client_storage.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
