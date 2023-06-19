@@ -1,0 +1,7 @@
+server\_resource module
+=======================
+
+.. automodule:: server_resource
+   :members:
+   :undoc-members:
+   :show-inheritance:
