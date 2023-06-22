@@ -1,0 +1,11 @@
+setup.py
+my_messanger_server.egg-info/PKG-INFO
+my_messanger_server.egg-info/SOURCES.txt
+my_messanger_server.egg-info/dependency_links.txt
+my_messanger_server.egg-info/requires.txt
+my_messanger_server.egg-info/top_level.txt
+server/__init__.py
+server/server.py
+server/server_gui.py
+server/server_resource.py
+server/server_storage.py
